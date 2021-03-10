@@ -17,10 +17,10 @@ public class JavarushTelegramBot extends TelegramLongPollingBot {
 
     public static String COMMAND_PREFIX = "/";
 
-    @Value("${bot.username}")
+    @Value("${bot.username: username}")
     private String username;
 
-    @Value("${bot.token}")
+    @Value("${bot.token: token}")
     private String token;
 
     private final CommandContainer commandContainer;
